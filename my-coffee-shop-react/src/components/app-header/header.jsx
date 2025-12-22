@@ -1,14 +1,14 @@
-import NavBar from "../app-nav-bar/nav-bar";
+import NavBar from '../app-nav-bar/nav-bar'
 
-import "./header.css"
+import './header.css'
 
 const Header = () => {
     return (
         <header className="header">
-            <NavBar/>
+            <NavBar type="header" />
             <h1 className="title">Our Coffee</h1>
         </header>
     )
 }
 
-export default Header;
+export default Header
