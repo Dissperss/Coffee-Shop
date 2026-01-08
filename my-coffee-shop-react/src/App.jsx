@@ -60,36 +60,62 @@ class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            filteredData: data,
+            data: data,
+            filter: 'all',
+            searchText: '',
         }
     }
 
     onSearch = (text) => {
-        this.setState(() => {
-            const prompt = text.toLowerCase()
-            const filtered = data.filter((item) => {
-                return (
-                    item.name.toLowerCase().includes(prompt) ||
-                    item.country.toLowerCase().includes(prompt)
-                )
-            })
-            return {
-                filteredData: filtered,
-            }
+        this.setState({
+            searchText: text.trim(),
         })
     }
 
+    filterCountry = (items, filter) => {
+        if (filter === 'all') {
+            return items
+        }
+
+        return items.filter((item) => item.country.toLowerCase() === filter)
+    }
+
+    search = (items, text) => {
+        if (!text) {
+            return items
+        }
+
+        const lower = text.toLowerCase()
+
+        return items.filter(
+            (item) =>
+                item.name.toLowerCase().includes(lower) ||
+                item.country.toLowerCase().includes(lower)
+        )
+    }
+
+    onFilterSelect = (filter) => {
+        this.setState({ filter })
+    }
+
     render() {
-        const filteredData = this.state.filteredData
+        const { filter, data, searchText } = this.state
+
+        const searchedData = this.search(data, searchText)
+        const resultData = this.filterCountry(searchedData, filter)
+
         return (
             <>
                 <Header />
                 <About />
                 <div className="search">
                     <SearchPanel onChange={this.onSearch} />
-                    <Filter />
+                    <Filter
+                        filter={filter}
+                        onFilterSelect={this.onFilterSelect}
+                    />
                 </div>
-                <CoffeeList data={filteredData} />
+                <CoffeeList data={resultData} />
                 <Footer />
             </>
         )

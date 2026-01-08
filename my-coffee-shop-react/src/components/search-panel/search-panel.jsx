@@ -1,11 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './search-panel.css'
 
 const SearchPanel = ({ onChange }) => {
     const [value, setValue] = useState('')
-    useEffect(() => {
-        onChange(value)
-    }, [value])
+
+    const onValueChange = (e) => {
+        const text = e.target.value
+        setValue(text)
+        onChange(text)
+    }
     return (
         <form>
             <label className="search__label" htmlFor="search">
@@ -18,7 +21,7 @@ const SearchPanel = ({ onChange }) => {
                 name="coffee-search"
                 placeholder="start typing here..."
                 value={value}
-                onChange={(e) => setValue(e.target.value)}
+                onChange={onValueChange}
             />
         </form>
     )
