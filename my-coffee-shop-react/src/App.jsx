@@ -101,8 +101,10 @@ class App extends Component {
     render() {
         const { filter, data, searchText } = this.state
 
-        const searchedData = this.search(data, searchText)
-        const resultData = this.filterCountry(searchedData, filter)
+        const resultData = this.filterCountry(
+            this.search(data, searchText),
+            filter
+        )
 
         return (
             <>

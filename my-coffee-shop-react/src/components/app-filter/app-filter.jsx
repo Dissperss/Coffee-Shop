@@ -1,4 +1,4 @@
-import './app-filter.css'
+import styles from './app-filter.module.css'
 
 const Filter = (props) => {
     const buttonsData = [
@@ -20,25 +20,27 @@ const Filter = (props) => {
         },
     ]
 
-    const buttons = buttonsData.map(({ name, label }) => {
-        const active = props.filter === name
-        const clazz = active ? 'btn-active' : ''
-        return (
-            <button
-                className={`btn ${clazz}`}
-                type="button"
-                key={name}
-                onClick={() => props.onFilterSelect(name)}
-            >
-                {label}
-            </button>
-        )
-    })
+    console.log(props)
 
     return (
-        <div className="filter">
-            <h3 className="filter__title">Or filter</h3>
-            <div className="filter__btns">{buttons}</div>
+        <div className={styles.filter}>
+            <h3 className={styles.filter__title}>Or filter</h3>
+            <div className={styles.filter__btns}>
+                {buttonsData.map(({ name, label }) => {
+                    const active = props.filter === name
+                    const clazz = active ? styles['btn-active'] : ''
+                    return (
+                        <button
+                            className={`${styles.btn} ${clazz}`}
+                            type="button"
+                            key={name}
+                            onClick={() => props.onFilterSelect(name)}
+                        >
+                            {label}
+                        </button>
+                    )
+                })}
+            </div>
         </div>
     )
 }
