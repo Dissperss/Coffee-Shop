@@ -1,1 +1,1 @@
-export { SectionAbout } from './sectionAbout.jsx'
+export { SectionAbout } from './SectionAbout.jsx'

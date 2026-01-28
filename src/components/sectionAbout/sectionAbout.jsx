@@ -1,21 +1,21 @@
-import Logo from '../coffee-beans-logo/logo'
+import { CoffeeBeansLogo } from '../coffeeBeanLogo/CoffeeBeansLogo'
 
 import drinkingCoffee from '../../assets/drinking_coffee.png'
 
-import './about.css'
+import styles from './SectionAbout.module.css'
 
 export const SectionAbout = () => {
     return (
-        <div className="about__wrapper">
+        <div className={styles.about__wrapper}>
             <img src={drinkingCoffee} alt="drinking_coffee" />
-            <div className="about__block">
-                <h2 className="about__title">About our beans</h2>
-                <Logo />
-                <p className="about__descr">
+            <div className={styles.about__block}>
+                <h2 className={styles.about__title}>About our beans</h2>
+                <CoffeeBeansLogo />
+                <p className={styles.about__descr}>
                     Extremity sweetness difficult behaviour he of. On <br />{' '}
                     disposal of as landlord horrible.
                 </p>
-                <p className="about__text">
+                <p className={styles.about__text}>
                     Afraid at highly months do things on at. <br />
                     Situation recommend objection do intention <br /> so
                     questions. <br />

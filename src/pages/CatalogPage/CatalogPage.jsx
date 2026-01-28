@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 
-import { SectionAbout } from '../../components/sectionAbout/sectionAbout'
+import { SectionAbout } from '../../components/sectionAbout/SectionAbout'
 import { SearchPanel } from '../../components/searchPanel/SearchPanel'
 import { CatalogFilter } from '../../components/catalogFilter/index'
 import { CoffeeList } from '../../components/coffeeList'

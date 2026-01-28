@@ -1,13 +1,13 @@
-import Logo from '../../coffee-beans-logo/logo'
-import NavBar from '../../app-nav-bar/nav-bar'
+import { CoffeeBeansLogo } from '../../coffeeBeanLogo/CoffeeBeansLogo'
+import { NavBar } from '../../navBar'
 
-import './footer.css'
+import styles from './Footer.module.css'
 
 export const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className={styles.footer}>
             <NavBar type="footer" />
-            <Logo />
+            <CoffeeBeansLogo />
         </footer>
     )
 }

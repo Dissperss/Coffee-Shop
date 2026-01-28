@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './search-panel.css'
+import styles from './SearchPanel.module.css'
 
 export const SearchPanel = ({ onChange }) => {
     const [value, setValue] = useState('')
@@ -11,11 +11,11 @@ export const SearchPanel = ({ onChange }) => {
     }
     return (
         <form>
-            <label className="search__label" htmlFor="search">
+            <label className={styles.search__label} htmlFor="search">
                 Looking for
             </label>
             <input
-                className="search__input"
+                className={styles.search__input}
                 type="text"
                 id="search"
                 name="coffee-search"

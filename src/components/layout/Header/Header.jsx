@@ -1,12 +1,11 @@
-import NavBar from '../../app-nav-bar/nav-bar'
-
-import './header.css'
+import { NavBar } from '../../navBar'
+import styles from './Header.module.css'
 
 export const Header = () => {
     return (
-        <header className="header">
+        <header className={styles.header}>
             <NavBar type="header" />
-            <h1 className="title">Our Coffee</h1>
+            <h1 className={styles.title}>Our Coffee</h1>
         </header>
     )
 }
