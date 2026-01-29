@@ -1,11 +1,11 @@
 import { NavBar } from '../../navBar'
 import styles from './Header.module.css'
 
-export const Header = () => {
+export const Header = ({ bgType = 'default', title = null }) => {
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${styles[`header_${bgType}`]}`}>
             <NavBar type="header" />
-            <h1 className={styles.title}>Our Coffee</h1>
+            {title !== null && <h1 className={styles.title}>{title}</h1>}
         </header>
     )
 }

@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react'
+import { Helmet } from 'react-helmet'
 
+import { Header } from '../../components/layout'
 import { SectionAbout } from '../../components/sectionAbout/SectionAbout'
 import { SearchPanel } from '../../components/searchPanel/SearchPanel'
 import { CatalogFilter } from '../../components/catalogFilter/index'
@@ -92,6 +94,15 @@ export const CatalogPage = () => {
 
     return (
         <>
+            <Helmet>
+                <meta name="description" content="List of our coffee" />
+                <meta
+                    name="keywords"
+                    content="coffee aromistico nescafe"
+                ></meta>
+                <title>Coffee list</title>
+            </Helmet>
+            <Header bgType="default" title="Our Coffee" />
             <SectionAbout />
             <div className={styles.search}>
                 <SearchPanel onChange={onSearch} />

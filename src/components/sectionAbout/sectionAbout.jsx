@@ -10,7 +10,7 @@ export const SectionAbout = () => {
             <img src={drinkingCoffee} alt="drinking_coffee" />
             <div className={styles.about__block}>
                 <h2 className={styles.about__title}>About our beans</h2>
-                <CoffeeBeansLogo />
+                <CoffeeBeansLogo color="black" />
                 <p className={styles.about__descr}>
                     Extremity sweetness difficult behaviour he of. On <br />{' '}
                     disposal of as landlord horrible.

@@ -1,3 +1,16 @@
+import { Helmet } from 'react-helmet'
+import { SectionGreetings } from '../../components/sectionGreetings'
+
 export const HomePage = () => {
-    return <h1>Добро пожаловать в наш кофешоп!</h1>
+    return (
+        <>
+            <Helmet>
+                <meta name="description" content="Website for coffee shop" />
+                <meta name="keywords" content="coffee"></meta>
+                <title>Coffee Shop</title>
+            </Helmet>
+
+            <SectionGreetings />
+        </>
+    )
 }
