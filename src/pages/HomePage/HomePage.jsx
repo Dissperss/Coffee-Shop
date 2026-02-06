@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet'
 import { SectionGreetings } from '../../components/sectionGreetings'
+import { SectionAboutUs } from '../../components/sectionAboutUs/SectionAboutUs'
 
 export const HomePage = () => {
     return (
@@ -11,6 +12,7 @@ export const HomePage = () => {
             </Helmet>
 
             <SectionGreetings />
+            <SectionAboutUs />
         </>
     )
 }
