@@ -103,7 +103,7 @@ export const CatalogPage = () => {
                 <title>Coffee list</title>
             </Helmet>
             <Header bgType="default" title="Our Coffee" />
-            <SectionAbout />
+            <SectionAboutBeans />
             <div className={styles.search}>
                 <SearchPanel onChange={onSearch} />
                 <CatalogFilter

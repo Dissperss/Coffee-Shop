@@ -8,7 +8,7 @@ export const SectionAboutUs = () => {
             <CoffeeBeansLogo color="black" />
             <p className={styles.about__text}>
                 Extremity sweetness difficult behaviour he of. On disposal of as
-                landlord horrible.Afraid at highly months do things on at.
+                landlord horrible. Afraid at highly months do things on at.
                 Situation recommend objection do intention so questions. As
                 greatly removed calling pleased improve an. Last ask him cold
                 feel met spot shy want. Children me laughing we prospect
