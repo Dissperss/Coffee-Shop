@@ -2,9 +2,9 @@ import { CoffeeBeansLogo } from '../coffeeBeanLogo/CoffeeBeansLogo'
 
 import drinkingCoffee from '../../assets/drinking_coffee.png'
 
-import styles from './SectionAbout.module.css'
+import styles from './SectionAboutBeans.module.css'
 
-export const SectionAbout = () => {
+export const SectionAboutBeans = () => {
     return (
         <div className={styles.about__wrapper}>
             <img src={drinkingCoffee} alt="drinking_coffee" />
