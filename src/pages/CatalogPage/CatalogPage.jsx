@@ -6,55 +6,9 @@ import { SectionAboutBeans } from '../../components/sectionAboutBeans/SectionAbo
 import { SearchPanel } from '../../components/searchPanel/SearchPanel'
 import { CatalogFilter } from '../../components/catalogFilter/index'
 import { CoffeeList } from '../../components/coffeeList'
-
-import coffeeCardImg from '../../assets/coffee-card.png'
+import { data } from '../../data'
 
 import styles from './CatalogPage.module.css'
-
-const data = [
-    {
-        id: 1,
-        country: 'Brazil',
-        price: '6.99$',
-        img: coffeeCardImg,
-        name: 'AROMISTICO Coffee 1 kg',
-    },
-    {
-        id: 2,
-        country: 'Kenya',
-        price: '6.99$',
-        img: coffeeCardImg,
-        name: 'AROMISTICO Coffee 1 kg',
-    },
-    {
-        id: 3,
-        country: 'Columbia',
-        price: '6.99$',
-        img: coffeeCardImg,
-        name: 'Nescafe Gold',
-    },
-    {
-        id: 4,
-        country: 'Brazil',
-        price: '6.99$',
-        img: coffeeCardImg,
-        name: 'AROMISTICO Coffee 1 kg',
-    },
-    {
-        id: 5,
-        country: 'Brazil',
-        price: '6.99$',
-        img: coffeeCardImg,
-        name: 'AROMISTICO Coffee 1 kg',
-    },
-    {
-        id: 6,
-        country: 'Brazil',
-        price: '6.99$',
-        img: coffeeCardImg,
-        name: 'AROMISTICO Coffee 1 kg',
-    },
-]
 
 export const CatalogPage = () => {
     const [filter, setFilter] = useState('all')

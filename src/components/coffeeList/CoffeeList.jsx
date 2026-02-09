@@ -1,4 +1,5 @@
 import { CoffeeCard } from '../coffeeCard'
+// import { data } from '../../data'
 
 import styles from './CoffeeList.module.css'
 
