@@ -10,7 +10,10 @@ export const AboutPage = () => {
                     name="description"
                     content="More information about coffee"
                 />
-                <meta name="keywords" content="coffee"></meta>
+                <meta
+                    name="keywords"
+                    content="coffee aromistico brasil "
+                ></meta>
                 <title>About coffee</title>
             </Helmet>
 

@@ -8,7 +8,10 @@ export const HomePage = () => {
         <>
             <Helmet>
                 <meta name="description" content="Website for coffee shop" />
-                <meta name="keywords" content="coffee"></meta>
+                <meta
+                    name="keywords"
+                    content="coffee presto solimo aromistico"
+                ></meta>
                 <title>Coffee Shop</title>
             </Helmet>
 

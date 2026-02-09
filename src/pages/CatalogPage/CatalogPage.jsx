@@ -98,7 +98,7 @@ export const CatalogPage = () => {
                 <meta name="description" content="List of our coffee" />
                 <meta
                     name="keywords"
-                    content="coffee aromistico nescafe"
+                    content="coffee aromistico kenya brasil nescafe columbia"
                 ></meta>
                 <title>Coffee list</title>
             </Helmet>
