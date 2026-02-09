@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { CoffeeBeansLogo } from '../coffeeBeanLogo/CoffeeBeansLogo'
 import { Header } from '../layout'
 
@@ -13,12 +14,14 @@ export const SectionGreetings = () => {
                 We makes every day full of energy and taste <br />
                 Want to try our beans?
             </p>
-            <button
-                onClick={() => console.log('click!')}
-                className={styles.greetings__btn}
-            >
-                More
-            </button>
+            <Link to="/catalog">
+                <button
+                    onClick={() => console.log('click!')}
+                    className={styles.greetings__btn}
+                >
+                    More
+                </button>
+            </Link>
         </section>
     )
 }
