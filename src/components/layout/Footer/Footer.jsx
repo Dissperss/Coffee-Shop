@@ -1,5 +1,5 @@
-import { CoffeeBeansLogo } from '../../coffeeBeanLogo/CoffeeBeansLogo'
-import { NavBar } from '../../navBar'
+import { CoffeeBeansLogo } from '@/components/coffeeBeanLogo'
+import { NavBar } from '@/components/navBar'
 
 import styles from './Footer.module.css'
 

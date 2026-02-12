@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { CoffeeBeansLogo } from '../coffeeBeanLogo/CoffeeBeansLogo'
-import { Header } from '../layout'
+import { CoffeeBeansLogo } from '@/components/coffeeBeanLogo'
+import { Header } from '@/components/layout'
 
 import styles from './SectionGreetings.module.css'
 

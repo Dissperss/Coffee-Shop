@@ -1,12 +1,12 @@
 import { useState, useMemo } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Header } from '../../components/layout'
-import { SectionAboutBeans } from '../../components/sectionAboutBeans/SectionAboutBeans'
-import { SearchPanel } from '../../components/searchPanel/SearchPanel'
-import { CatalogFilter } from '../../components/catalogFilter/index'
-import { CoffeeList } from '../../components/coffeeList'
-import { data } from '../../data'
+import { Header } from '@/components/layout'
+import { SectionAboutBeans } from '@/components/sectionAboutBeans/SectionAboutBeans'
+import { SearchPanel } from '@/components/searchPanel/SearchPanel'
+import { CatalogFilter } from '@/components/catalogFilter/index'
+import { CoffeeList } from '@/components/coffeeList'
+import { data } from '@/data'
 
 import styles from './CatalogPage.module.css'
 

@@ -1,4 +1,4 @@
-import { CoffeeBeansLogo } from '../coffeeBeanLogo/CoffeeBeansLogo'
+import { CoffeeBeansLogo } from '@/components/coffeeBeanLogo'
 import styles from './SectionAboutUs.module.css'
 
 export const SectionAboutUs = () => {

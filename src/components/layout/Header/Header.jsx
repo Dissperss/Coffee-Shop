@@ -1,4 +1,4 @@
-import { NavBar } from '../../navBar'
+import { NavBar } from '@/components/navBar'
 import styles from './Header.module.css'
 
 export const Header = ({ bgType = 'default', title = null }) => {

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Layout } from '../provides/Layout'
-import { CatalogPage, HomePage, AboutPage, PleasurePage } from '../pages/index'
+import { Layout } from '@/provides/Layout'
+import { CatalogPage, HomePage, AboutPage, PleasurePage } from '@/pages/index'
 
 export const router = createBrowserRouter([
     {

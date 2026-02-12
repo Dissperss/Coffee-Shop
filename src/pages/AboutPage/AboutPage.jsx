@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet'
-import { Header } from '../../components/layout'
-import { SectionAboutCoffee } from '../../components/sectionAboutCoffee/SectionAboutCoffee'
+import { Header } from '@/components/layout'
+import { SectionAboutCoffee } from '@/components/sectionAboutCoffee/SectionAboutCoffee'
 
 export const AboutPage = () => {
     return (

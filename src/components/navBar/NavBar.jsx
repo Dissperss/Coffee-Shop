@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { HeaderIcon } from '../layout/Header/headerIcon/HeaderIcon'
+import { HeaderIcon } from '@/components/layout/Header/headerIcon/HeaderIcon'
 import styles from './NavBar.module.css'
 
 export const NavBar = ({ type = 'header' }) => {

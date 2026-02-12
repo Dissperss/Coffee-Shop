@@ -1,4 +1,4 @@
-import coffeeCardImg from '../assets/coffee-card.png'
+import coffeeCardImg from '@/assets/coffee-card.png'
 
 export const data = [
     {

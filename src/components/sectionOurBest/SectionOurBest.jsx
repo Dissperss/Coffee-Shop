@@ -1,8 +1,8 @@
 import styles from './SectionOurBest.module.css'
 
-import firstImg from '../../assets/homePage/best/first.png'
-import secondImg from '../../assets/homePage/best/second.png'
-import thirdImg from '../../assets/homePage/best/third.png'
+import firstImg from '@/assets/homePage/best/first.png'
+import secondImg from '@/assets/homePage/best/second.png'
+import thirdImg from '@/assets/homePage/best/third.png'
 import { Link } from 'react-router-dom'
 
 export const SectionOurBest = () => {

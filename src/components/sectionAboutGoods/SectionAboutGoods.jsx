@@ -1,7 +1,7 @@
-import styles from './SectionAboutGoods.module.css'
-import { CoffeeBeansLogo } from '../coffeeBeanLogo/CoffeeBeansLogo'
-import coffeeCup from '../../assets/pleasurePage/coffee_cup.jpg'
+import { CoffeeBeansLogo } from '@/components/coffeeBeanLogo'
+import coffeeCup from '@/assets/pleasurePage/coffee_cup.jpg'
 
+import styles from './SectionAboutGoods.module.css'
 export const SectionAboutGoods = () => {
     return (
         <section className={styles.about__goods}>

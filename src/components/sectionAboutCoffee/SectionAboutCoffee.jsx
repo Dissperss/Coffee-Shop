@@ -1,6 +1,6 @@
-import { CoffeeBeansLogo } from '../coffeeBeanLogo/CoffeeBeansLogo'
+import { CoffeeBeansLogo } from '@/components/coffeeBeanLogo'
+import coffeeImg from '@/assets/aboutPage/aromistico.jpg'
 import styles from './SectionAboutCoffee.module.css'
-import coffeeImg from '../../assets/aboutPage/aromistico.jpg'
 
 export const SectionAboutCoffee = () => {
     return (

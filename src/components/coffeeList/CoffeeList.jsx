@@ -1,4 +1,4 @@
-import { CoffeeCard } from '../coffeeCard'
+import { CoffeeCard } from '@/components/coffeeCard'
 
 import styles from './CoffeeList.module.css'
 
