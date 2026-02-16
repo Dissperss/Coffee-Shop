@@ -1,6 +1,6 @@
 import { CoffeeBeansLogo } from '@/components/coffeeBeanLogo'
 
-import drinkingCoffee from '@/assets/drinking_coffee.png'
+import drinkingCoffee from '@/assets/catalogPage/drinking_coffee.png'
 
 import styles from './SectionAboutBeans.module.css'
 
