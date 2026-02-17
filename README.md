@@ -2,7 +2,7 @@
 
 ## Ссылка на деплой
 
-<!--  -->
+[coffee-shop-snowy-seven.vercel.app](https://coffee-shop-snowy-seven.vercel.app/)
 
 ## Стек технологий
 
