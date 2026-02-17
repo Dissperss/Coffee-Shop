@@ -1,0 +1,18 @@
+.search__label {
+    margin-right: 20px;
+    font-weight: var(--fw-small);
+    font-size: var(--fs-bg);
+    text-align: center;
+    color: var(--black);
+}
+
+.search__input {
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: var(--white);
+    font-weight: var(--fw-small);
+    font-size: var(--fs-lt);
+    color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,26 @@
+.filter {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.filter__btns {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.filter__title {
+    font-weight: var(--fw-small);
+    font-size: var(--fs-bg);
+    text-align: center;
+    color: var(--black);
+}
+
+.btn {
+    font-size: var(--fs-sm);
+}
+
+.btn-active {
+    outline: 4px auto -webkit-focus-ring-color;
+}

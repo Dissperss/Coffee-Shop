@@ -1,0 +1,45 @@
+.card {
+    border-radius: 8px;
+    padding: 30px 25px;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: var(--white);
+    @media (max-width: 768px) {
+        padding: 19px;
+    }
+}
+
+.coffee__card_img {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 100%;
+}
+
+.coffee__card_title {
+    margin-top: 15px;
+    font-weight: var(--fw-small);
+    font-size: var(--fs-bg);
+    text-align: right;
+    color: var(--black);
+    @media (max-width: 768px) {
+        font-size: var(--fs-sm);
+    }
+    @media (max-width: 576px) {
+        font-size: var(--fs-md);
+    }
+}
+
+.coffee__card_country {
+    font-weight: var(--fw-small);
+    margin-top: 10px;
+    font-size: var(--fs-sm);
+    text-align: right;
+    color: var(--black);
+}
+
+.coffee__card_price {
+    font-weight: var(--fw-bold);
+    margin-top: 10px;
+    font-size: var(--fs-sm);
+    text-align: right;
+    color: var(--black);
+}

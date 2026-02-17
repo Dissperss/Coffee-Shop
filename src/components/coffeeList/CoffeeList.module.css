@@ -1,0 +1,23 @@
+.coffee__list {
+    padding-top: 60px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 270px);
+    column-gap: 70px;
+    row-gap: 60px;
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(3, 210px);
+        column-gap: 50px;
+        row-gap: 40px;
+        padding-top: 40px;
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(2, 240px);
+        column-gap: 40px;
+    }
+}
+
+.nothing {
+    margin-top: 40px;
+    text-align: center;
+}

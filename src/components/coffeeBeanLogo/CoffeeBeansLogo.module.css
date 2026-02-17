@@ -1,0 +1,14 @@
+.logo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.logo span {
+    display: block;
+    border: 1px solid currentColor;
+    width: 60px;
+    height: 0px;
+}
